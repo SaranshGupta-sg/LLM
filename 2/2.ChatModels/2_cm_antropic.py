@@ -16,5 +16,5 @@ response = cm.invoke("Hello, explain LangChain in simple words")
 
 print(response.content)
 
-# for temperature = 0 -> koi esa application banana ho jaha p  same input k liye same output to waha p temperature ki value 0 k aas pass rakhni hai
-# for temperature = 1.5 -> koi esa application banana ho jaha p  same input k liye alag-alag output to waha p temperature ki value 1.5 k aas pass rakhni hai
+# for temperature = 0 -> koi esa application banana ho jaha p same input k liye same output to waha p temperature ki value 0 k aas pass rakhni hai
+# for temperature = 1.5 -> koi esa application banana ho jaha p same input k liye alag-alag output to waha p temperature ki value 1.5 k aas pass rakhni hai
