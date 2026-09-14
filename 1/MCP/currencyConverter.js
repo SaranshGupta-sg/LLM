@@ -47,11 +47,11 @@ async function startServer() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
   console.error(
-    "✅MCP convert Currency Server started  and ready to receive requests",
+    "MCP convert Currency Server started  and ready to receive requests",
   );
 }
 startServer().catch((error) => {
-  console.error("❌Failed to start server:", error);
+  console.error("Failed to start server:", error);
   process.exit(1);
 });
 
