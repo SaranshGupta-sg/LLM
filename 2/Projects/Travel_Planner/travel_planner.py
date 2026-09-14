@@ -112,9 +112,7 @@ def create_itinerary(state: PlannerState) -> PlannerState:
     }
 
 
-# =========================
-# Create Graph
-# =========================
+# Graph
 
 workflow = StateGraph(PlannerState)
 
@@ -130,10 +128,7 @@ workflow.add_edge("create_itinerary", END)
 
 app = workflow.compile()
 
-
-# =========================
-# Run Travel Planner
-# =========================
+# Travel Planner
 
 def travel_planner(user_request: str):
 
@@ -151,10 +146,6 @@ def travel_planner(user_request: str):
     for output in app.stream(state):
         pass
 
-
-# =========================
-# Start Application
-# =========================
 
 if __name__ == "__main__":
 
