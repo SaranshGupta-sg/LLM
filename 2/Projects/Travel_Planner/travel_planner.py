@@ -68,7 +68,7 @@ def input_interest(state: PlannerState) -> PlannerState:
 
     print(
         f"Please enter your interests for the trip to "
-        f"{state['city']} (comma-separated):"
+        f"{state['city']}:"
     )
 
     user_message = input("Your Input: ")
