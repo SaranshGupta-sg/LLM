@@ -131,7 +131,6 @@ app = workflow.compile()
 # Travel Planner
 
 def travel_planner(user_request: str):
-
     print(f"Initial Request: {user_request}\n")
 
     state = {
@@ -148,7 +147,5 @@ def travel_planner(user_request: str):
 
 
 if __name__ == "__main__":
-
     user_request = "I want to plan a day trip"
-
     travel_planner(user_request)
